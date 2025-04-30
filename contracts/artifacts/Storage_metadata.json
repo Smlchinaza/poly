@@ -1,0 +1,117 @@
+{
+	"compiler": {
+		"version": "0.8.28+commit.7893614a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "num",
+						"type": "uint256"
+					}
+				],
+				"name": "addMoney",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "retrieve",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "num",
+						"type": "uint256"
+					}
+				],
+				"name": "store",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"custom:dev-run-script": "./scripts/deploy_with_ethers.ts",
+			"details": "Store & retrieve value in a variable",
+			"kind": "dev",
+			"methods": {
+				"addMoney(uint256)": {
+					"details": "Store value in variable",
+					"params": {
+						"num": "value to store"
+					}
+				},
+				"retrieve()": {
+					"details": "Return value",
+					"returns": {
+						"_0": "value of 'number'"
+					}
+				},
+				"store(uint256)": {
+					"details": "Store value in variable",
+					"params": {
+						"num": "value to store"
+					}
+				}
+			},
+			"title": "Storage",
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Storage.sol": "Storage"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"details": {
+				"constantOptimizer": false,
+				"cse": false,
+				"deduplicate": false,
+				"inliner": false,
+				"jumpdestRemover": false,
+				"orderLiterals": false,
+				"peephole": false,
+				"simpleCounterForLoopUncheckedIncrement": true,
+				"yul": false
+			},
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Storage.sol": {
+			"keccak256": "0x213d201f6e4abf21cb4f205b003c5142d711754c4733a99ed5883948c1583035",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://8d861b35cf2086c599058ee83c9fdd95fb21fa97b401e43b57264127f934ff60",
+				"dweb:/ipfs/QmRRaXFPEMpYUeCvAmGGT1HiEPSPASEaeZfyLs7chbDoLB"
+			]
+		}
+	},
+	"version": 1
+}
